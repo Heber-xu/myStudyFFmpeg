@@ -134,3 +134,10 @@ clang -o player_sync player_sync.c `pkg-config --cflags --libs libavformat libav
 //运行
 ./player_sync ../aaa.mp4
 ```
+
+# transcoding
+
+```shell
+clang -g -o transcoding transcoding.c video_debugging.c `pkg-config --cflags --libs libavcodec libavutil libavformat`
+./transcoding aaa.mp4 bbb.mp4
+```
